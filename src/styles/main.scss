@@ -1,0 +1,8 @@
+@import "./normalize.scss";
+@import "./sassConfig.scss";
+@import "./icon.scss";
+html{
+    font-size: 100px;
+}
+.p-r{position: relative;}
+.p-a{position: absolute;}

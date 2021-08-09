@@ -1,0 +1,64 @@
+.cars-wrap {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 94px;
+  z-index: 11;
+}
+
+.cars-swiper-wrap {
+  padding: 0 155px;
+  .swiper-container{
+    overflow: initial;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50%;
+    width: .6rem;
+    height: 1rem;
+    margin-top: -50px;
+    border-radius: 100px;
+    background-color: #fff;
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include webkit(box-shadow,0 0 18px 0 rgba(0,0,0,.3));
+    @include webkit(transition,all .5s ease 0s);
+    &:hover{
+      background-color: rgb(96, 101, 119);
+      &:before{
+        border-left: 3px solid $color-blur;
+        border-top: 3px solid $color-blur;
+      }
+    }
+    &:before{
+      content: "";
+      width: .14rem;
+      height: .14rem;
+      border-left: 3px solid #000;
+      border-top: 3px solid #000;
+      display: inline-block;
+    }
+  }
+
+  .swiper-button-prev{
+    left: 53px;
+    &:before{
+      margin-left: .05rem;
+      @include webkit(transform,rotate(-45deg));
+    }
+  }
+  .swiper-button-next{
+    right: 53px;
+    &:before{
+      margin-right: .05rem;
+      @include webkit(transform,rotate(135deg));
+    }
+  }
+  // :focus焦点元素，点击触发
+  .swiper-button-prev,
+  .swiper-button-next:focus{
+    outline: none;
+  }
+}

@@ -1,0 +1,24 @@
+i[class^=icon]{  //获取class开头为icon的标签
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background-color: $color-main;
+    background-repeat: no-repeat;
+}
+.icon-help{
+    background-image: url(~@/assets/问号.png);
+    background-position: 50%;
+}
+.icon-search{
+    background-image: url(~@/assets/搜索.png);
+    background-position: 50%;
+}
+.icon-location{
+    background-image: url(~@/assets/位置.png);
+    background-position: 50%;
+}
+.icon-mi{
+    background-image: url(~@/assets/我的.png);
+    background-position: 50%;
+}
