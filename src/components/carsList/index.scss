@@ -114,6 +114,10 @@
   left: 0;
   bottom: 0;
   padding-top: 0;
+  .scroll{
+    height: 100%;
+    overflow-y: auto;
+  }
   .column {
     position: relative;
     font-size: 0.2rem;
@@ -179,5 +183,64 @@
     top: 0;
     left: 0;
     height: 100%;
+  }
+}
+.info{
+  margin: 32px 0 28px;
+}
+.select-car-btn{
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  bottom: -42px;
+}
+.cars-type-list{
+  li{
+    height: 50px;
+    padding: 0 20px 0 23px;
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    line-height: 50px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    // box-sizing: border-box;
+    &.current{
+      border-color: #0f9cee;
+    }
+  }
+  .name{
+    float: left;
+  }
+  .price{
+    float: right;
+  }
+}
+.clause-doc{
+  overflow: hidden;
+  margin-top: 20px;
+  i{
+    float: right;
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    &.current{
+      background-color: $color-main;
+    }
+    &:before{
+      content: '';
+      width: 9px;
+      height: 6px;
+      display: block;
+      margin-top: 5px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      @include webkit(transform,rotate(-45deg));
+    }
   }
 }

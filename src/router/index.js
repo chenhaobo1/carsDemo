@@ -14,6 +14,18 @@ const routes = [
         path: '/user',
         name: 'User',
         component: () => import("../views/user/index")
+      },
+      // 首页 - 安全设置
+      {
+        path: '/safe',
+        name: 'Safe',
+        component: () => import("../views/safe/index")
+      },
+      // 首页 - 密码设置
+      {
+        path: '/password',
+        name: 'Password',
+        component: () => import("../views/safe/password")
       }
     ]
   },

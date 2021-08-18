@@ -2,7 +2,7 @@
   <div class="cars-wrap">
     <div class="cars-swiper-wrap">
       <swiper ref="mySwiper" :options="swiperOption">
-        <swiper-slide><carsList height="700px" /></swiper-slide>
+        <swiper-slide><carsList height="820px" /></swiper-slide>
         <swiper-slide><carsList /></swiper-slide>
         <swiper-slide><carsList /></swiper-slide>
         <swiper-slide><carsList /></swiper-slide>

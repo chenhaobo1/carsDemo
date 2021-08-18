@@ -1,8 +1,32 @@
 @import "./normalize.scss";
 @import "./sassConfig.scss";
 @import "./icon.scss";
+@import "./ui.scss";
 html{
     font-size: 100px;
 }
 .p-r{position: relative;}
 .p-a{position: absolute;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+// common ui
+.select-car-btn{
+    display: inline-block;
+    width: 200px;
+    height: 68px;
+    border-radius: 100px;
+    margin: 0 17px;
+    line-height: 68px;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    background-color: $color-main;
+}
+
+.user-container{
+    padding: 0 30px;
+}

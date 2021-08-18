@@ -1,0 +1,63 @@
+.user-info{
+    display: flex;
+    padding: 70px 0 30px 10px;
+    color: aliceblue;
+    img{
+        width: .8rem;
+        height: .8rem;
+        border-radius: 100%;
+        border: 6px solid #2f343a;
+    }
+    .meta{
+        flex: 1;
+        padding-left: 17px;
+    }
+    .name{
+        color: #909090;
+        line-height: 43px;
+        font-size: 18px;
+    }
+    span{
+        display: inline-block;
+        height: .27rem;
+        padding: 0 17px;
+        background-color: #10a0f2;
+        border-radius: 100px;
+        line-height: .27rem;
+        color: #fff;
+        font-size: 14px;
+        position: relative;
+        top: 5px;
+    }
+}
+
+.group-links{
+    a{
+        display: block;
+        margin: 0 -30px;
+        height: .64rem;
+        padding: 0 40px;
+        line-height: .64rem;
+        color: rgba(255, 255, 255,.8);
+        border-bottom: 1px solid rgba(255, 255, 255,.05);
+        font-size: 15px;
+    }
+    .icon{
+        width: .3rem;
+        height: .3rem;
+        margin: 10px 5px -8px 0;
+    }
+    .arrow{
+        display: inline-block;
+        position: absolute;
+        right: .4rem;
+        margin-top: .27rem;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        @include webkit(box-sizing,border-box);
+        @include webkit(transform,rotate(45deg));
+        opacity: .15;
+    }
+}
